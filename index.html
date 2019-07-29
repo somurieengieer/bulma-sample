@@ -45,25 +45,34 @@
     <p class="level-item"><a href="#">Menu</a></p>
     <p class="level-item"><a href="#">Display</a></p>
     <p class="level-item"><a href="#">Company</a></p>
-    <p class="level-item"><a href="#">Access<</a></p>
+    <p class="level-item"><a href="#">Access</a></p>
   </div>
 </nav>
 
 <main class="columns">
   <article class="column">
-
-    <section style="background-color: #DDFFFF">
-      main > article(メイン部分) + aside(サイドバー) の設定をした。main内横幅で9:3で配分。レスポンシブデザインではない。
+    <section class="box">
+      <h1 class="title">作成したレイアウトについて</h1>
+      <p>main > article(メイン部分) + aside(サイドバー) の設定をした。main内横幅で9:3で配分。レスポンシブデザインではない。</p>
+      <p>boxを使って記事をカードっぽく表示している。</p>
     </section>
 
-    <section>
-      <h1>HTML5のWebサイト全体レイアウトのサンプル</h1>
+    <section class="box">
+      <h1 class="title">学習時に役立ったコンテンツ</h1>
+      <ul>
+        <li>Bulmaは本家サイトがわかりやすかった</li>
+        <li><a href="https://namikuguri.hatenablog.com/entry/2018/04/23/211018">sectionなどレイアウトの日本語説明</a></li>
+      </ul>
+    </section>
+
+    <section class="box">
+      <h1 class="title">HTML5のWebサイト全体レイアウトのサンプル</h1>
       <img src="./image/html5layout.jpg" alt="html5layout_sample"/>
     </section>
 
-    <section>
+    <section class="box">
       <div class="container">
-        <h1>List Sample。Levelを使うと横並びを調整できる</h1>
+        <h1 class="title">List Sample</h1>
         <div class="list is-hoverable">
           <a class="list-item">
             Featured
@@ -75,10 +84,12 @@
             Announcements
           </a>
         </div>
+      </div>
+    </section>
 
-        <hr/>
-
-        <h1>Levelを使うと横並びを調整できる</h1>
+    <section class="box">
+      <div class="container">
+        <h1 class="title">Levelを使うと横並びを調整できる</h1>
         <div class="list is-hoverable">
           <a class="list-item">
             <div class="level">
@@ -106,9 +117,9 @@
       </div>
     </section>
 
-    <section>
-      <h1>要素を並べてみる。container側にis-gaplessをつけないと子にpaddingが12px付くためはみ出してしまう。</h1>
-
+    <section class="box">
+      <h1 class="title">要素を並べてみる。</h1>
+      <p>container側にis-gaplessをつけないと子にpaddingが12px付くためはみ出してしまう。</p>
       <div class="is-gapless columns">
         <div class="column has-background-warning">要素左側</div>
         <div class="column has-background-link">要素真ん中</div>
@@ -116,8 +127,8 @@
       </div>
     </section>
 
-    <section>
-      <h1>コメント形式のコンテンツ</h1>
+    <section class="box">
+      <h1 class="title">コメント形式のコンテンツ</h1>
       <!-- 記事・コメント形式のコンテンツ -->
       <article class="box media">
         <figure class="media-left">
@@ -148,31 +159,34 @@
     </section>
   </article>
 
-  <aside class="column is-3 menu">
-    <p class="menu-label">SideMenu</p>
-    <ul class="menu-list">
-      <li><a>Menu1</a></li>
-      <li><a>Menu2</a></li>
-      <li><a>Menu3</a></li>
-      <li><a>Menu4</a></li>
-    </ul>
-    <p class="menu-label">
-      MenuCategory
-    </p>
-    <ul class="menu-list">
-      <li><a>Category2.1</a></li>
-      <li><a>Category2.2</a></li>
-      <li><a>Category2.3</a></li>
-      <li>
-        <ul>
-          <li><a>Item2-1</a></li>
-          <li><a>Item2-2</a></li>
-          <li><a>Item2-3</a></li>
-        </ul>
-      </li>
-      <li><a>Category2.4</a></li>
-      <li><a>Category2.5</a></li>
-    </ul>
+  <aside class="column is-3">
+    <div class="menu box">
+      <p>classにboxをつけなければもう少しサイドバーっぽくなる</p>
+      <p class="menu-label">SideMenu</p>
+      <ul class="menu-list">
+        <li><a>Menu1</a></li>
+        <li><a>Menu2</a></li>
+        <li><a>Menu3</a></li>
+        <li><a>Menu4</a></li>
+      </ul>
+      <p class="menu-label">
+        MenuCategory
+      </p>
+      <ul class="menu-list">
+        <li><a>Category2.1</a></li>
+        <li><a>Category2.2</a></li>
+        <li><a>Category2.3</a></li>
+        <li>
+          <ul>
+            <li><a>Item2-1</a></li>
+            <li><a>Item2-2</a></li>
+            <li><a>Item2-3</a></li>
+          </ul>
+        </li>
+        <li><a>Category2.4</a></li>
+        <li><a>Category2.5</a></li>
+      </ul>
+    </div>
   </aside>
 </main>
 
