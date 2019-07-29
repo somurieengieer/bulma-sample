@@ -2,12 +2,12 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>タイトル</title>
+  <title>Bulmaサンプルページ</title>
   <link rel="stylesheet" type="text/css" href="./css/main.css"/>
 
   <!-- Bulma -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-  <!-- FontAwesome -->
+  <!-- FontAwesome. セットで使うことが多い -->
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One|Work+Sans&display=swap" rel="stylesheet">
@@ -22,24 +22,79 @@
     </div>
     <div class="navbar-end">
       <div class="user">
-        <p class="image is-24x24">
-          <img class="is-rounded" src="assets/images/go.png">
-        </p>
-        <p class="user__name">○○さん</p>
+        <p class="user__name">○○さんだよ</p>
       </div>
     </div>
   </div>
 </header>
+
+<!-- Not Created Yet -->
 <nav></nav>
 
 <main class="columns">
   <article class="column">
-    <section>
+    <section style="background-color: #DDFFFF">
       main > article(メイン部分) + aside(サイドバー) の設定をした。main内横幅で9:3で配分。レスポンシブデザインではない。
     </section>
     <section>
       <h1>HTML5のWebサイト全体レイアウトのサンプル</h1>
       <img src="./image/html5layout.jpg" alt="html5layout_sample"/>
+    </section>
+
+    <section>
+      <div class="container">
+        <h1>List Sample</h1>
+        <div class="list is-hoverable">
+          <a class="list-item">
+            Featured
+          </a>
+          <a class="list-item">
+            All Posts
+          </a>
+          <a class="list-item is-active">
+            Announcements
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1>要素を並べてみる。container側にis-gaplessをつけないと子にpaddingが12px付くためはみ出してしまう。</h1>
+
+      <div class="is-gapless columns">
+        <div class="column has-background-warning">要素左側</div>
+        <div class="column has-background-link">要素真ん中</div>
+        <div class="column has-background-primary">要素右側</div>
+      </div>
+    </section>
+    <section>
+      <h1>コメント形式のコンテンツ</h1>
+      <!-- 記事・コメント形式のコンテンツ -->
+      <article class="box media">
+        <figure class="media-left">
+          <p class="image is-48x48">
+            <i class="fas fa-file-alt"></i>
+          </p>
+        </figure>
+        <div class="media-content">
+          <div class="conten">
+            <p><strong>Content Title</strong></p><br/>
+            Contents~~ Contents~~ Contents~~ Contents~~ Contents~~ Contents~~
+          </div>
+          <!-- 子コンテンツがある場合はここに挿入 -->
+          <article class="media">
+            <figure class="media-left">
+              <p class="image is-24x24">
+                <i class="fas fa-file-alt"></i>
+              </p>
+            </figure>
+            <div class="media-content">
+              <p><strong>Sub Content Title</strong></p><br/>
+              Contents~~ Contents~~ Contents~~ Contents~~ Contents~~ Contents~~
+            </div>
+          </article>
+          <!-- 子コンテンツここまで -->
+        </div>
+      </article>
     </section>
   </article>
 
