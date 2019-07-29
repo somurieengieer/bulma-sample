@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>タイトル</title>
+  <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <!-- FontAwesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One|Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="navbar is-light" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-start">
+      <h1 class="navbar-item logo">
+        Sample for study.
+      </h1>
+    </div>
+    <div class="navbar-end">
+      <div class="user">
+        <p class="image is-24x24">
+          <img class="is-rounded" src="assets/images/go.png">
+        </p>
+        <p class="user__name">○○さん</p>
+      </div>
+    </div>
+  </div>
+</header>
+<nav></nav>
+
+<main class="columns">
+  <article class="column">
+    <section>
+      main > article(メイン部分) + aside(サイドバー) の設定をした。main内横幅で9:3で配分。レスポンシブデザインではない。
+    </section>
+    <section>
+      <h1>HTML5のWebサイト全体レイアウトのサンプル</h1>
+      <img src="./image/html5layout.jpg" alt="html5layout_sample"/>
+    </section>
+  </article>
+
+  <aside class="column is-3 menu">
+    <p class="menu-label">SideMenu</p>
+    <ul class="menu-list">
+      <li><a>Menu1</a></li>
+      <li><a>Menu2</a></li>
+      <li><a>Menu3</a></li>
+      <li><a>Menu4</a></li>
+    </ul>
+    <p class="menu-label">
+      MenuCategory
+    </p>
+    <ul class="menu-list">
+      <li><a>Category2.1</a></li>
+      <li><a>Category2.2</a></li>
+      <li><a>Category2.3</a></li>
+      <li>
+        <ul>
+          <li><a>Item2-1</a></li>
+          <li><a>Item2-2</a></li>
+          <li><a>Item2-3</a></li>
+        </ul>
+      </li>
+      <li><a>Category2.4</a></li>
+      <li><a>Category2.5</a></li>
+    </ul>
+  </aside>
+</main>
+
+<footer></footer>
+
+</body>
+</html>
