@@ -45,12 +45,40 @@
 
     <section>
       <div class="container">
-        <h1>List Sample</h1>
+        <h1>List Sample。Levelを使うと横並びを調整できる</h1>
         <div class="list is-hoverable">
           <a class="list-item">
             Featured
           </a>
           <a class="list-item">
+            All Posts
+          </a>
+          <a class="list-item is-active">
+            Announcements
+          </a>
+        </div>
+
+        <hr/>
+
+        <h1>Levelを使うと横並びを調整できる</h1>
+        <div class="list is-hoverable">
+          <a class="list-item">
+            <div class="level">
+              <div class="level-left">
+                <div class="level-item">
+                  <p>Featured</p>
+                </div>
+              </div>
+              <div class="level-right">
+                <div class="level-item">
+                  <p class="control">
+                    <button class="button is-primary">Delete</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="list-item level">
             All Posts
           </a>
           <a class="list-item is-active">
