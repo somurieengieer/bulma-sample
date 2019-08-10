@@ -13,11 +13,11 @@
   <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One|Work+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="navbar is-light" role="navigation" aria-label="main navigation">
+<header class="navbar is-light" role="banner" aria-label="main navigation">
   <div class="container">
     <div class="navbar-start">
-      <h1 class="navbar-item logo">
-        Sample for study.
+      <h1 class="navbar-item" style="font-family: 'Saira Stencil One', cursive; font-size: 2em;">
+        Sample for study. (font by Google Font)
       </h1>
     </div>
     <div class="navbar-end">
@@ -30,8 +30,15 @@
 
 
 <!-- Not Created Yet -->
-<nav class="level has-background-info">
+<nav class="navbar level has-background-info" role="navigation">
   <div class="level-left">
+    <p class="level-item"><strong>Top</strong></p>
+    <p class="level-item"><a href="#">Menu</a></p>
+    <p class="level-item"><a href="#">Display</a></p>
+    <p class="level-item"><a href="#">Company</a></p>
+    <p class="level-item"><a href="#">Access</a></p>
+  </div>
+  <div class="level-right">
     <div class="level-item">
       <p class="subtitle is-5">Search:</p>
     </div>
@@ -40,16 +47,9 @@
       <button class="button">Search</button>
     </div>
   </div>
-  <div class="level-right">
-    <p class="level-item"><strong>Top</strong></p>
-    <p class="level-item"><a href="#">Menu</a></p>
-    <p class="level-item"><a href="#">Display</a></p>
-    <p class="level-item"><a href="#">Company</a></p>
-    <p class="level-item"><a href="#">Access</a></p>
-  </div>
 </nav>
 
-<main class="columns">
+<main class="columns" role="main">
   <article class="column">
     <section class="box">
       <h1 class="title">作成したレイアウトについて</h1>
@@ -67,6 +67,7 @@
 
     <section class="box">
       <h1 class="title">HTML5のWebサイト全体レイアウトのサンプル</h1>
+      <p>以下画像に加えて、articleとasideをmainタグで括っています。</p>
       <img src="./image/html5layout.jpg" alt="html5layout_sample"/>
     </section>
 
@@ -300,7 +301,7 @@
 
   </article>
 
-  <aside class="column is-3">
+  <aside class="column is-3" role="complementary">
     <div class="menu box">
       <p>classにboxをつけなければもう少しサイドバーっぽくなる</p>
       <p class="menu-label">SideMenu</p>
@@ -334,6 +335,7 @@
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
+      フッターも簡単に置ける。
       Copyright ~~~Company.
       The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
     </p>
